@@ -3,7 +3,6 @@ const tijera = document.getElementById('tijera')
 const piedra=document.getElementById('piedra')
 const papel=document.getElementById('papel')
 
-
 //Declaracion de los contadores
 const contadorUsuario=document.getElementById('contador-usuario')
 const contadorMaquina=document.getElementById('contador-ordenador')
