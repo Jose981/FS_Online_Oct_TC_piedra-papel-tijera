@@ -1,18 +1,59 @@
+:root {
+  --azul-global: #1e90ff;        
+  --azul-global-trans: rgba(30, 144, 255, 0.25); 
+  --azul-resultado-trans: rgba(255, 255, 255, 0.15);
+}
+
+img {
+  width: 500px;
+  height: 200px;
+  border-radius: 25px;
+}
+
+p, h1 {
+  color: white;
+}
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: var(--azul-global);
 }
+.contenedor-juego {
+  padding: 20px;
+}
+.boton-jugada {
+
+}
+#resultados {
+  background: var(--azul-resultado-trans);               
+  border-radius: 14px;
+  margin: 50px;
+
+}
+
+
+#contador{
+  background: var(--azul-resultado-trans);
+  border-radius: 14px;
+  margin: 50px;
+}
+
+/* BOTONES */
 .boton-jugada {
   background-color: #3498db;
   color: #fff;
+  border-radius: 20px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-}
-#resultados {
-  font-size: 20px;
-  margin: 20px 0;
+  border-radius: 20px;
+  padding: 12px 25px;
+  transition: transform 0.25s ease, background-color 0.3s ease;
 }
 
 
+.boton-jugada:hover {
+  transform: scale(1.15);                  
+  background-color: rgba(30, 144, 255, 0.6); 
+}

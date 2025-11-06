@@ -7,14 +7,21 @@
     <title>Piedra, papel, tijera</title>
   </head>
   <body>
-    <button class="boton-jugada" data-jugada="piedra" id="piedra">
-      Piedra
-    </button>
-    <button class="boton-jugada" data-jugada="papel" id="papel">Papel</button>
-    <button class="boton-jugada" id="tijera">Tijera</button>
-    <div id="resultados"></div>
-    <p id="contador-usuario">Tus puntos: 0</p>
-    <p id="contador-ordenador">Puntos de la máquina: 0</p>
-    <script src="./js/script.js"></script>
+    <div class="contenedor-juego">
+      <img src="imagenes/image.png" alt="Imagen" />
+      <h1>Juega a piedra, papel, tijera</h1>
+      <div class="btns">
+        <button class="boton-jugada" id="piedra">Piedra</button>
+        <button class="boton-jugada" id="papel">Papel</button>
+        <button class="boton-jugada" id="tijera">Tijera</button>
+      </div>
+      <div id="resultados"></div>
+      <div id="contador">
+        <p id="contador-usuario">Tus puntos: 0</p>
+        <p id="contador-ordenador">Puntos de la máquina: 0</p>
+      </div>
+
+      <script src="./js/script.js"></script>
+    </div>
   </body>
 </html>
